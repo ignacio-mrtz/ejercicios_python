@@ -5,3 +5,4 @@
 # lista con los elementos de la lista recibida para los cuales la función recibida devuelve un
 # valor verdadero.
 # c) ¿En qué ejercicios de esta guía podría haber utilizado estas funciones?
+
