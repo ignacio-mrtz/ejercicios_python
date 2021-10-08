@@ -16,8 +16,6 @@ def main(agenda):
             if modificar=="si":
                 nuevo_numero=input("escribir nuevo numero: ")
                 agenda[nombre]=nuevo_numero
-            else:
-                continue
         else:
             ingresar=input("el nombre no se encuentra. quiere ingresar un nro para dicha persona?(si/no): ")
             if ingresar=="si":
