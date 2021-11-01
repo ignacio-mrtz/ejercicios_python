@@ -8,11 +8,11 @@
 
 def main(lista_de_tuplas):
     diccionario={}
-    for x in lista_de_tuplas:
-        if diccionario.get(x[0], ''):
-            diccionario[x[0]].append(x[1])
+    for clave, valor in lista_de_tuplas:
+        if clave in diccionario:
+            diccionario[clave].append(valor)
         else:
-            diccionario[x[0]]=[x[1]]
+            diccionario[clave]=[valor]
     return diccionario
 
 
