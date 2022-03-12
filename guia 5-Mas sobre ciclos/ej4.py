@@ -10,7 +10,8 @@ def adivine_el_numero():
     while True:
         numero_elegido=input("ingrese un nro entero entre 0 y 100(presione * para terminar el juego): ")
         if numero_elegido == "*":
-            return "saliste del juego"
+            print("saliste del juego")
+            return 
         numero_elegido=int(numero_elegido)
         if numero_elegido == numero_aleatorio_secreto:
             break

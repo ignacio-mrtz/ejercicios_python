@@ -15,7 +15,6 @@ def main2(string):
 
 print(main2("3156463574573564363"))
 
-
 def main3(string):
     nro=int(string)
     return "{:0,.2f}".format(nro)

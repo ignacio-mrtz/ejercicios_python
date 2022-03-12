@@ -20,6 +20,4 @@ def main(lista_ordenada, elemento):
 lista_ordenada=[1,3,4,5,6,9]
 print(main(lista_ordenada,2))
 print(lista_ordenada)
-
-
-
+    

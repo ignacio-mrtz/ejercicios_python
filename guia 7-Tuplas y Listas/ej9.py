@@ -22,4 +22,17 @@ def empaquetar(lista):
 print(empaquetar([1, 1, 1, 3, 5, 1, 1, 3, 2]))
 
 
+def empaquetar2(lista):
+    nueva_lista=[]
+    contador=0
+    for i in range(0,len(lista)):
+        if i==len(lista)-1 or lista[i]!=lista[i+1] :
+            contador+=1
+            nueva_lista.append((lista[i],contador))
+            contador=0
+        else:
+            contador+=1
+    return nueva_lista
+
+print(empaquetar2([1, 1, 1, 3, 5, 1, 1, 3, 2]))
 

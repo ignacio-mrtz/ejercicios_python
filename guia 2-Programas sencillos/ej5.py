@@ -25,7 +25,7 @@ def par_o_impar_punto_b(numero):
 
 def digito_de_las_unidades(numero):
     digitos = str(numero)
-    return digitos[-1]
+    return len(digitos)
 
 #print(digito_de_las_unidades(1574232))
 
@@ -36,4 +36,12 @@ def punto_d(numero):
             return resultado
 
 #print(punto_d(47))
+
+def punto_d_2(numero):
+    resultado=int(numero/10) *10
+    return resultado
+
+#print(punto_d_2(73))
+
+
         

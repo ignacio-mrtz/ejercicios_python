@@ -13,18 +13,3 @@ b=["bien", "hola", "como", "estas","todo"]
 
 print(tienen_mismas_palabras(a,b))
 
-#a mano:
-
-def iguales(lista1, lista2):
-    return incluido(lista1, lista2) and incluido(lista2, lista1) 
-
-def incluido(lista1, lista2):
-    for clave, valor in d1.items():
-        if clave not in lista2:
-            return False
-        if lista2[clave] != lista1[clave]:
-            return False
-    return True
-        
-
-

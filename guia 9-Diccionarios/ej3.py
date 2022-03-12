@@ -24,5 +24,28 @@ def main(agenda):
     return agenda
                 
 agenda={"juan": 43643543, "carlos":3153453, "ana":36757345, "jose": 256436546}
-agenda_modificada=main(agenda)
-print(agenda_modificada)
+#agenda_modificada=main(agenda)
+#print(agenda_modificada)
+
+
+
+def mainb(agenda):
+    while True:
+        nombre=input("ingrese un nombre('*' para salir): ")
+        if nombre=="*":
+            break
+        elif nombre in agenda:
+            print(f"su telefono es: {agenda[nombre]}")
+            correccion=input("si no es correcto ingrese un nuevo numero sino escriba '*' para continuar: ")
+            if correccion!="*":
+                agenda[nombre]=int(correccion)
+        else:
+            numero=int(input("no se encuentra en la agenda, ingrese el numero de telefono: "))
+            agenda[nombre]=numero
+    return agenda
+
+print(mainb(agenda))
+
+
+            
+        

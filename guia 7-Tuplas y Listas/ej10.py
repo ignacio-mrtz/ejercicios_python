@@ -7,15 +7,12 @@
 # lista, son linealmente independientes o no.
 
 def suma_de_matrices(matriz1,matriz2):
-    if len(matriz1)==len(matriz2) and len(matriz1[1])==len(matriz2[1]):
-        matriz_resultante=[]
-        for i in range(0,len(matriz1)):
-            matriz_resultante.append([])
-            for j in range(0,len(matriz1[1])):
-                suma=matriz1[i][j] + matriz2[i][j]
-                matriz_resultante[i].append(suma)
-    else:
-        return
+    matriz_resultante=[]
+    for i in range(0,len(matriz1)):
+        matriz_resultante.append([])
+        for j in range(0,len(matriz1[i])):
+            suma=matriz1[i][j] + matriz2[i][j]
+            matriz_resultante[i].append(suma)
     return matriz_resultante
 
 #print(suma_de_matrices([[1,2], [3,4], [5,6]],  [[9,8], [7,6], [5,4]]))
@@ -45,3 +42,5 @@ m2 = [[1,2,0], [4,5,6]] # 2x3
 #imprimir_matriz(sumar_matrices(m1, m2))
 
 #------------------------------------------------------------------------------------
+
+

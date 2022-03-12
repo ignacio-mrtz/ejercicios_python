@@ -7,12 +7,7 @@
 # d) Modificar el programa anterior para que sea una función que devuelva si el usuario
 # ingresó o no la contraseña correctamente, mediante un valor booleano (True o False).
 
-# def es_la_contraseña_correcta():
-#     contraseña=5833
-#     contraseña_ingresada=int(input("escriba su contraseña: "))
-#     while contraseña != contraseña_ingresada:
-#         contraseña_ingresada=int(input("contraseña erronea,ingresela nuevamente:"))
-
+import random
 from time import sleep
 
 def es_la_contraseña_correcta():
@@ -29,5 +24,20 @@ def es_la_contraseña_correcta():
         else:
             return True
         
-es_la_contraseña_correcta()
+#es_la_contraseña_correcta()
 
+#o tmb:
+
+def es_la_contraseña_correcta_2():
+    cont=random.randint(0,10000)
+    print(cont)
+    for i in range(3):
+        cont_ingresada=input("ingrese su contraseña: ")
+        sleep(i)
+        if cont_ingresada.isnumeric():
+            cont_ingresada=int(cont_ingresada)
+        if cont_ingresada==cont:
+            return True
+    return False
+
+es_la_contraseña_correcta_2()

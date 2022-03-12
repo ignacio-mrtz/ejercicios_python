@@ -7,8 +7,6 @@ def es_primo(nro):
             return False
     return True
 
-#print(es_primo(29))
-
 def nros_primos_hasta_n_nro(n):
     i=1
     while i<=n:
@@ -16,7 +14,15 @@ def nros_primos_hasta_n_nro(n):
             print(i,end=", ")
         i+=1
 
-nros_primos_hasta_n_nro(50)
+#o tmb:
+
+def nros_primos_hasta_n_nro_2(n):
+    for i in range(1,n):
+        if es_primo(i)==True:
+            print(i)
+
+
+nros_primos_hasta_n_nro_2(50)
  
 
 

@@ -17,3 +17,18 @@ def main(texto):
 texto="anafkhdfhddg kiwi tomate banana zapallo manzana"
 
 print(main(texto))
+
+
+def mainb(cadena):
+    diccionario={}
+    lista_de_palabras=cadena.split()
+    for palabra in lista_de_palabras:
+        for c in palabra:
+            if c not in diccionario or c in diccionario and len(diccionario[c])<len(palabra):
+                diccionario[c]=palabra
+    return diccionario
+
+print(mainb(texto))
+            
+
+

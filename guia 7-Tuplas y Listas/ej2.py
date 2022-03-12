@@ -13,6 +13,16 @@ def fichas_de_domino_encajan(tupla1, tupla2):
 
 #print(fichas_de_domino_encajan((1,2),(3,4)))
 
+#o tmb:
+def punto_a(tupla1,tupla2):
+    if tupla1[0] in tupla2 or tupla1[1] in tupla2:
+         return True
+    else:
+        return False
+
+#print(punto_a((1,2),(3,2)))
+
+
 def fichas_de_domino_encajan2(string1,strin2):
     lista1 = string1.split("-")
     lista2 = strin2.split("-")
@@ -21,7 +31,7 @@ def fichas_de_domino_encajan2(string1,strin2):
     else:
         return False
 
-print(fichas_de_domino_encajan2("1-4","4-5"))
+#print(fichas_de_domino_encajan2("1-4","4-5"))
 
 
 

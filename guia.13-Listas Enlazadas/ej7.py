@@ -1,0 +1,1 @@
+#Ejercicio 13.7. Una lista circular es una lista cuyo último nodo está ligado al primero, de modo que es posible recorrerla infinitamente. Escribir la clase ListaCircular, incluyendo los métodos insert, append, remove y pop.

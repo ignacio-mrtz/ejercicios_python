@@ -9,5 +9,15 @@ def ordenados_de_menor_a_mayor(tupla):
     else:
         print("desordenada")
 
+#ordenados_de_menor_a_mayor((1,3,5,6))
 
-ordenados_de_menor_a_mayor((1,3,5,6))
+# o tmb:
+
+def tupla_ordenada(tupla):
+    copia=list(tupla)
+    for i in range(0,len(copia)-1):
+        if copia[i]>copia[i+1]:
+            return False
+    return True
+
+print(tupla_ordenada((1,3,5,7)))

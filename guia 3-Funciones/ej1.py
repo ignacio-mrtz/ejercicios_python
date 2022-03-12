@@ -14,3 +14,4 @@ def duracion_en_hs_min_seg(segundos):
     seg = ((segundos%(60*60))%60 )
     return horas,minutos,seg
 
+print(duracion_en_hs_min_seg(125))

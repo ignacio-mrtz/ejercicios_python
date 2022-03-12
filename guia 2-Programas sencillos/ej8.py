@@ -15,4 +15,19 @@ def main():
         resultado = factorial(numero)
         print("nro de orden", i, ". ", "factorial de", numero, ": ",resultado )
 
-main()
+#main()
+
+def main2():
+    cont=1
+    while True:
+        numero=input("ingrese un nro para calcular su factorial(escriba '*' para terminar):")
+        if numero=="*":
+            return
+        numero=int(numero)
+        fact=factorial(numero)
+        print(f"orden {cont}: el factorial de {numero} es {fact}")
+        cont+=1
+
+#main2()
+
+

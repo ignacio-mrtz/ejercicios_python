@@ -13,7 +13,7 @@ def cuantos_multiplos_del_primero_menores_que_el_segundo(nro1,nro2):
     return multiplos
 
 #print(cuantos_multiplos_del_primero_menores_que_el_segundo(2,7))
-        
+
 def cuantos_multiplos_del_primero_menores_que_el_segundo_b(nro1,nro2):
     i=1
     while nro1*i<nro2:
